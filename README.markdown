@@ -42,7 +42,7 @@ Now do all this:
 If you run 'cucumber' and 'rake spec' successfully at the end, then all is right with
 the world.
 
-To run the server:
+### To run the server:
 
     export RAILS_ENV=development
     Rails s
@@ -51,3 +51,8 @@ To run the server:
 
     http://localhost:3000/cards
 
+  Note that you can either fill in the "micro-form" for each card and click a button to move it
+
+    OR
+
+  You can drag-and-drop them into the desired swimlane.
