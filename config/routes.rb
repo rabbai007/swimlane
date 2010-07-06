@@ -1,4 +1,11 @@
 Fin::Application.routes.draw do |map|
+  get "moves/create"
+
+  resources :cards do
+    resources :moves
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

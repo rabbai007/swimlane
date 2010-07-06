@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+Swimlane.create(:name => 'backlog', :default => true, :position => 2)
+Swimlane.create(:name => 'current', :default => false, :position => 1)
