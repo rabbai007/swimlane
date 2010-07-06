@@ -3,13 +3,14 @@
 This is the example app for Acceptance Testing with Cucumber tutorial,
 presented by Aslak Hellesøy and David Chelimsky at RailsConf 2010.
 
-The master branch is the starting point, and the other branches represent
-different phases in the evolution of the example app.
+Scott Smith has "borrowed" this code to see if it can be used
+as a front end to augment some Pivotal Tracker functionality
+with swimlanes.
 
 ### Recommended environment
 
 * git
-* rvm 0.1.38 (if you're on *nix)
+* rvm 0.1.40 (if you're on *nix)
 * pik (if you're on windows)
 * ruby 1.8.7
 
@@ -17,8 +18,8 @@ different phases in the evolution of the example app.
 
 Start off with a clean gemset with rvm or pik:
 
-    rvm gemset create tutorial
-    rvm gemset use tutorial
+    rvm gemset create swimlane
+    rvm gemset use swimlane
 
 Install a couple of gems you'll need to bootstrap everything else:
 
@@ -32,5 +33,5 @@ Now do all this:
     bundle lock
     cucumber
 
-If you see cucumber run at the end with a pending step, then all is right with
+If you run 'cucumber' and 'rake spec' successfully at the end, then all is right with
 the world.
