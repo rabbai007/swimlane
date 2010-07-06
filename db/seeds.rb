@@ -5,5 +5,9 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
-Swimlane.create(:name => 'backlog', :default => true, :position => 2)
-Swimlane.create(:name => 'current', :default => false, :position => 1)
+backlog = Swimlane.create(:name => 'backlog', :default => true, :position => 2)
+current = Swimlane.create(:name => 'current', :default => false, :position => 1)
+current.cards << Card.create(:title => 'Prepare Garden')
+current.cards << Card.create(:title => 'Plant Garden')
+backlog.cards << Card.create(:title => 'Water Garden')
+backlog.cards << Card.create(:title => 'Harvest Garden')

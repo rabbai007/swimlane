@@ -31,7 +31,23 @@ Now do all this:
     cd railsconf2010-app
     bundle install
     bundle lock
+    export RAILS_ENV=development
+    rake db:migrate
+    rake db:test:prepare
+    rake db:seed
+    export RAILS_ENV=test
+    rake spec
     cucumber
 
 If you run 'cucumber' and 'rake spec' successfully at the end, then all is right with
 the world.
+
+To run the server:
+
+    export RAILS_ENV=development
+    Rails s
+
+  and open a browser on
+
+    http://localhost:3000/cards
+
